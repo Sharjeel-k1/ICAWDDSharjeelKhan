@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+html {
+    font-family: ubuntu;
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 100vh;
+    background-image: url(media/ai-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: larger;
+    padding: 1rem;
+    
+    
+    
+}
+
+
+#hamburger {
+    width: 60px;
+    height: 45px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    transform: scale(0.8);
+    z-index: 3;
+}
+
+#hamburger span {
+    display: block;
+    background-color: #fff;
+    height: 9px;
+    width: 100%;
+    border-radius: 9px;
+    position: absolute;
+    transition: all .2s;
+}
+
+#hamburger span:nth-child(1) {
+    top: 0;
+}
+
+#hamburger span:nth-child(2) {
+   top: 18px;
+}
+
+#hamburger span:nth-child(3) {
+   top: 18px;
+}
+
+#hamburger span:nth-child(4) {
+   top: 36px;
+}
+
+#hamburger.open span:nth-child(1) {
+   top: 18px;
+   opacity: 0;
+}
+
+#hamburger.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+#hamburger.open span:nth-child(3) {
+   transform: rotate(-45deg);
+}
+
+#hamburger.open span:nth-child(4) {
+   top: 18px;
+   opacity: 0;
+}
+
+nav {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    position: relative;
+}
+
+nav.open {
+    opacity: 1;
+    visibility: visible;
+    background-color: rgba(0,0,0,0.5);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav.open ul {
+    list-style: none;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+nav.open a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.6rem;
+    transition: all 0.3s;
+}
+
+nav.open a:hover {
+    transform: scale(1.2);
+}
+
+
+#intro {
+
+    padding: 1rem;
+    background-image: url(media/intro-background.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: larger;
+    color: #fff;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+article {
+    background-color: rgba(0,0,0,0.5);
+    max-width: 800px;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 8px;    
+    opacity: 1;
+}
+p {
+    margin-top: 1rem;
+}
+
+#map {
+    height: 75vh;
+    background-color: #333;
+}
+
+#timetable {
+    background-image: url(media/Types_of_Artificial_Intelligence.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color:#fff;
+    background-color: #111;
+    padding: 1rem;
+    padding-top: 5.5rem;
+}
+
+
+
+td,th {
+    align-items: center;
+    padding: 5px;
+    border: solid #fff;
+
+}
+
+#speaker {
+    display: flex;
+    flex-direction: column;
+    background-image: url(media/speakerimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#speaker img {
+    display: block;
+    width: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+#location {
+    background-color: black;
+    }
+#location p {
+    color: #fff;
+}
+
+
+#email, #name {
+    font-family: inherit;
+    font-size:1.2rem;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background-color: #444;
+    color: #fff;
+    outline: none;    
+    border: 1px solid #666;
+}
+
+#response {
+    text-align: center;
+    padding: 1rem;
+}
+
+button {
+    display: table-column;
+    padding: 1rem 1.2rem;
+    background-color: #111;
+    color:#fff;
+    border: 1px solid #666;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: #999;
+    cursor: pointer;
+    transition: all 0.2s;
+    
+}
+
+button:hover {
+transform: scale(1.1);
+}
+
+#marker {
+    width: 50px;
+    height: 50px;
+    background-image: url(media/pointer.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+
+footer {
+    padding: 4rem;
+    background-color: #333;
+    color: aliceblue;
+}
+
+footer ul {
+list-style-type: none;
+display: flex;
+justify-content: center;
+margin: 0;
+padding: 0;
+}
+
+footer img {
+            display: flex;
+            flex-direction: row;
+            width: 4rem;
+            height: 4rem;
+            transition: all 0.3s;
+}
+
+#pcu {
+    height: 2rem;
+    width: auto;
+    display: flex;
+    justify-content: left;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+
+footer li {
+        margin:1rem; 
+          
+}
+
+footer a:hover img {
+    transform: scale(1.3);
+}
+
+@media (max-width: 865px) {
+    footer img {
+        width: 2rem;
+        height: 2rem;
+        
+    }
+  
+    
+}
+@media (max-width: 700px) {
+    footer img {
+        width: 1rem;
+        height: 1rem;
+        
+    }
+    #pcu {
+        height:1rem;
+        width: auto;
+        margin: auto;
+    }
+    
+}
+
